@@ -75,7 +75,7 @@
 			]   
     },
     {
-      "match": "\\b(break|continue|else|end for|end function|end while|for|if|in|new|return|then|while|__isa)\\b",
+      "match": "\\b(break|continue|else|end for|end if|end function|end while|for|if|in|new|return|then|while|__isa)\\b",
       "name": "keyword.control.greyscript"
     },
     {
