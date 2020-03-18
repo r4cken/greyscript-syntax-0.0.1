@@ -1,6 +1,6 @@
 {
-	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-	"name": "GreyScript",
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "GreyScript",
   "scopeName": "source.greyscript",
   "patterns": [
     {
@@ -56,23 +56,19 @@
     },
     {
       "begin": "\"",
-	  "beginCaptures": {
-	    "0": {
-		  "name": "punctuation.definition.string.begin.greyscript"
-		}
+      "beginCaptures": {
+        "0": {
+          "name": "punctuation.definition.string.begin.greyscript"
+        }
       },
-	  "end": "\"",
-	  "endCaptures": {
-		"0": {
-		  "name": "punctuation.definition.string.end.greyscript"
-		}
-	  },
-	  "name": "string.quoted.double.greyscript",
-	  "patterns": [
-	    {
-		  "include": "#escaped_char"
-		}
-	  ]
+      "end": "\"",
+      "endCaptures": {
+        "0": {
+          "name": "punctuation.definition.string.end.greyscript"
+        }
+      },
+      "name": "string.quoted.double.greyscript",
+      "patterns": [{"include": "#escaped_char"}]
     },
     {
       "match": "\\b(break|continue|else|end for|end if|end function|end while|for|if|in|new|return|then|while|__isa)\\b",
