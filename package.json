@@ -1,0 +1,31 @@
+{
+  "name": "greyscript",
+  "displayName": "GreyScript",
+  "description": "GreyScript is a version of MiniScript, a 3rd party scripting language asset for Unity3d",
+  "version": "0.0.1",
+  "publisher": "r4cken",
+  "engines": {
+    "vscode": "^1.27.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+        "id": "greyscript",
+        "aliases": ["GreyScript", "greyscript"],
+        "extensions": [
+          ".gs",
+          ".greyscript"
+        ],
+        "configuration": "./language-configuration.json"
+    }],
+    "grammars": [
+      {
+        "language": "greyscript",
+        "scopeName": "source.greyscript",
+        "path": "./syntaxes/greyscript.tmLanguage.json"
+      }
+    ]
+  }
+}
